@@ -1,0 +1,45 @@
+/* Put your custom CSS here */
+
+.function {
+  color: #717171;
+}
+
+hr {
+  border-top: 1px solid #66666;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+/*=Header */
+.logo {
+  margin: 0 auto;
+  min-height: 40px;
+  text-align: center;
+}
+
+/*=Grid */
+.ui-grid-a > .ui-block-a.label   { color: #717171; margin-bottom: 16px; width: 35%; }
+.ui-grid-a > .ui-block-b.content {                 margin-bottom: 16px; width: 65%; }
+
+.ui-grid-a img {
+  max-width: 95%;
+}
+
+/*=Icons */
+.ui-icon-myapp-phone {
+    background-image: url("../images/tel.png");
+}
+.ui-icon-myapp-email {
+    background-image: url("../images/mail.png");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .ui-icon-myapp-email {
+    background-image: url("../images/mail-hd.png");
+    background-size: 18px 18px;
+  }
+  .ui-icon-myapp-phone {
+    background-image: url("../images/tel-hd.png");
+    background-size: 18px 18px;
+  }
+}
