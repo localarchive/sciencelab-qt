@@ -1,0 +1,4 @@
+sciencelab-qt
+=============
+
+Sciencelab Qt
