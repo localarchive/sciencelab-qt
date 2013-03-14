@@ -13,18 +13,53 @@
     <link rel="stylesheet" href="assets/libs/jquery.mobile.structure-1.3.0.min.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <script src="assets/libs/jquery-1.7.2.min.js"></script>
+    <script src="assets/js/custom-inits.js"></script>
     <script src="assets/libs/jquery.mobile-1.3.0.min.js"></script>
+    <script src="assets/libs/purl.js"></script>
+    <script src="assets/libs/handlebars.js"></script>
     <script src="assets/js/scripts.js"></script>
     <!-- User-generated css -->
     <style>
     </style>
+    <script id="entry-template" type="text/x-handlebars-template">
+      <ul data-role="listview" data-autodividers="true" data-filter="true"
+        data-inset="true" data-split-icon="gear" id="listview">
+        {{#each people}}
+        <li data-theme="c">
+        <a href="contact.html?user={{userid}}" rel="external" data-transition="slide">
+          <img src="{{ portrait }}" alt="{{ fullname }}" />
+          <h2>{{ fullname }}</h2>
+          <p>{{ function }}</p>
+          </a>
+          <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Bel</a>
+        </li>
+        {{/each}}
+      </ul>
+    </script>
+
     <!-- User-generated js -->
     <script>
       try {
 
-        $(function() {
-
-        });
+          $('#homepage').live('pagecreate', function(event) {
+            var source = $("#entry-template").html();
+            var template = Handlebars.compile(source);
+            //$('#content').html(template({}));
+            //return;
+            $.ajax({
+              url: 'http://localhost:8080/Plone/@@phonebook?q=',
+              crossDomain: true
+            }).done(function(data) {
+              var json_data = jQuery.parseJSON(data);
+              if (json_data.length > 0) {
+                $('#content').html(template({
+                  people: json_data, 
+                  }));
+                // Re-enable jqm stuff
+                $("#content").trigger('create'); 
+              }
+            });
+          });
 
       } catch (error) {
         console.error("Your javascript has an error: " + error);
@@ -39,35 +74,39 @@
         <div class="logo"><img border="0" src="assets/images/logo_sciencelab.png" alt="ScienceBook" /></div>
       </div><!-- data-role=header -->
 
-      <div data-role="content">
-        <ul data-role="listview" data-autodividers="true" data-filter="true" data-inset="true">
+      <div data-role="content" id="content">
+        <ul data-role="listview" data-autodividers="true" data-filter="true" data-inset="true" data-split-icon="gear">
           <li data-theme="c">
-            <a href="paulusi.html" data-transition="slide">
-              <img src="./assets/images/paulusi.jpg" alt="Johannes Paulus I" />
-              <h2>Albino Luciani</h2>
-              <p>Johannes Paulus I</p>
+            <a href="contact.html" data-transition="slide">
+              <img src="./assets/images/apankov.jpeg" alt="Alexander Pankov" />
+              <h2>Alexander Pankov</h2>
+              <p>Hippe functieomschrijving</p>
             </a>
+            <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Bel</a>
           </li>
           <li data-theme="c">
-            <a href="paulusii.html" data-transition="slide">
-              <img src="./assets/images/paulusii.jpg" alt="Johannes Paulus II" />
-              <h2>Karol Józef Wojtyła</h2>
-              <p>Johannes Paulus II</p>
+            <a href="contact.html" data-transition="slide">
+              <img src="./assets/images/cnooitmeer.jpeg" alt="Cherwin Nooitmeer" />
+              <h2>Cherwin Nooitmeer</h2>
+              <p>Hippe functieomschrijving</p>
             </a>
+            <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Bel</a>
           </li>
           <li data-theme="c">
-            <a href="benedictusxvi.html" data-transition="slide">
-              <img src="assets/images/benedictusxvi.jpg" alt="Benedictus XVI" />
-              <h2>Joseph Alois Ratzinger</h2>
-              <p>Benedictus XVI</p>
+            <a href="contact.html" data-transition="slide">
+              <img src="assets/images/cseegers.jpeg" alt="Charita Seegers" />
+              <h2>Charita Seegers</h2>
+              <p>Hippe functieomschrijving</p>
             </a>
+            <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Bel</a>
           </li>
           <li>
-            <a href="franciscus.html" data-transition="slide">
-              <img src="assets/images/franciscus.jpg" alt="Franciscus">
-              <h2>Jorge Mario Bergoglio</h2>
-              <p>Franciscus</p>
+            <a href="contact.html" data-transition="slide">
+              <img src="assets/images/jdewit.jpeg">
+              <h2>Jarno de Wit</h2>
+              <p>Frontend Developer</p>
             </a>
+            <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Bel</a>
           </li>
         </ul>
       </div><!-- data-role=content -->
