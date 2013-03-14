@@ -47,7 +47,7 @@
             //$('#content').html(template({}));
             //return;
             $.ajax({
-              url: 'http://localhost:8080/Plone/@@phonebook?q=',
+              url: 'http://localhost:8080/sciencelab/@@phonebook?q=',
               crossDomain: true
             }).done(function(data) {
               var json_data = jQuery.parseJSON(data);
@@ -77,38 +77,33 @@
       <div data-role="content" id="content">
         <ul data-role="listview" data-autodividers="true" data-filter="true" data-inset="true" data-split-icon="gear">
           <li data-theme="c">
-            <a href="contact.html" data-transition="slide">
-              <img src="./assets/images/apankov.jpeg" alt="Alexander Pankov" />
-              <h2>Alexander Pankov</h2>
-              <p>Hippe functieomschrijving</p>
+            <a href="paulusi.html" data-transition="slide">
+              <img src="./assets/images/paulusi.jpg" alt="Johannes Paulus I" />
+              <h2>Albino Luciani</h2>
+              <p>Johannes Paulus I</p>
             </a>
-            <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Bel</a>
           </li>
           <li data-theme="c">
-            <a href="contact.html" data-transition="slide">
-              <img src="./assets/images/cnooitmeer.jpeg" alt="Cherwin Nooitmeer" />
-              <h2>Cherwin Nooitmeer</h2>
-              <p>Hippe functieomschrijving</p>
+            <a href="paulusii.html" data-transition="slide">
+              <img src="./assets/images/paulusii.jpg" alt="Johannes Paulus II" />
+              <h2>Karol Józef Wojtyła</h2>
+              <p>Johannes Paulus II</p>
             </a>
-            <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Bel</a>
           </li>
           <li data-theme="c">
-            <a href="contact.html" data-transition="slide">
-              <img src="assets/images/cseegers.jpeg" alt="Charita Seegers" />
-              <h2>Charita Seegers</h2>
-              <p>Hippe functieomschrijving</p>
+            <a href="benedictusxvi.html" data-transition="slide">
+              <img src="assets/images/benedictusxvi.jpg" alt="Benedictus XVI" />
+              <h2>Joseph Alois Ratzinger</h2>
+              <p>Benedictus XVI</p>
             </a>
-            <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Bel</a>
           </li>
           <li>
-            <a href="contact.html" data-transition="slide">
-              <img src="assets/images/jdewit.jpeg">
-              <h2>Jarno de Wit</h2>
-              <p>Frontend Developer</p>
+            <a href="franciscus.html" data-transition="slide">
+              <img src="assets/images/franciscus.jpg" alt="Franciscus">
+              <h2>Jorge Mario Bergoglio</h2>
+              <p>Franciscus</p>
             </a>
-            <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Bel</a>
-          </li>
-        </ul>
+          </li>        </ul>
       </div><!-- data-role=content -->
 
       <div data-role="popup" id="purchase" data-theme="d" data-overlay-theme="b" class="ui-content" style="max-width:340px; padding-bottom:2em;">

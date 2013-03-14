@@ -64,7 +64,7 @@
             var template = Handlebars.compile(source);
             var user = $.url().param('user');
             $.ajax({
-              url: 'http://localhost:8080/Plone/@@phonebook?user=' + user,
+              url: 'http://localhost:8080/sciencelabi/@@phonebook?user=' + user,
               crossDomain: true
             }).done(function(data) {
               var json_data = jQuery.parseJSON(data);
