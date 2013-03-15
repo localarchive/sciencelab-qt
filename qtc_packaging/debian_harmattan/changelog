@@ -1,9 +1,16 @@
-cordovaqt (0.0.2) unstable; urgency=low
+cordovaqt (0.1.0) unstable; urgency=low
 
+  * First version with all basic functionality in place
+
+## 0.0.3
+  * Remove handlebars.js
+  * Dynamic content creation based on the JSON
+
+## 0.0.2
   * Add REST api
   * popiefy demo profiles
 
 ## 0.0.1
   * Initial Release.
 
- -- Jarno <jdewit@unknown>  Mon, 11 Mar 2013 23:42:16 +0100
+ -- Jarno <jarno@callmelocalhost.com>  Mon, 15 Mar 2013 22:24:00 +0100
