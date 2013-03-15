@@ -30,6 +30,8 @@ AutoGenerateAegisFile
 -->
 <aegis>
 	<request policy="add">
+      <credential name="Cellular" />
+
 
 		<!-- Make a GSM call, send text messages (SMS). -->
 	<!--

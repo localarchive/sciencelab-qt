@@ -1,5 +1,9 @@
-cordovaqt (0.0.1) unstable; urgency=low
+cordovaqt (0.0.2) unstable; urgency=low
 
+  * Add REST api
+  * popiefy demo profiles
+
+## 0.0.1
   * Initial Release.
 
  -- Jarno <jdewit@unknown>  Mon, 11 Mar 2013 23:42:16 +0100

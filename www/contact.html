@@ -64,14 +64,14 @@
             var template = Handlebars.compile(source);
             var user = $.url().param('user');
             $.ajax({
-              url: 'http://localhost:8080/sciencelabi/@@phonebook?user=' + user,
+              url: 'http://192.168.100.131:8080/sciencelab/@@phonebook?user=' + user,
               crossDomain: true
             }).done(function(data) {
               var json_data = jQuery.parseJSON(data);
               if (json_data.length > 0) {
                 $('#content').html(template(json_data[0]));
                 // Re-enable jqm stuff
-                $("#content").trigger('create'); 
+                $("#content").trigger('create');
               }
             });
 
