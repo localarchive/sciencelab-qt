@@ -31,7 +31,7 @@ AutoGenerateAegisFile
 <aegis>
 	<request policy="add">
       <credential name="Cellular" />
-
+      <credential name="FacebookSocial" />
 
 		<!-- Make a GSM call, send text messages (SMS). -->
 	<!--

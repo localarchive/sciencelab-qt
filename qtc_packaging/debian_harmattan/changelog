@@ -1,5 +1,10 @@
-cordovaqt (0.1.0) unstable; urgency=low
+cordovaqt (0.2.0) unstable; urgency=low
 
+  * Single page and single js version
+  * Includes swipe left and right
+  * ! Missing footer navigation to visualize swipe left and right
+
+## 0.1.0
   * First version with all basic functionality in place
 
 ## 0.0.3
