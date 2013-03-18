@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by Qt Creator 2.4.1, 2013-03-15T22:33:34. -->
+<!-- Written by Qt Creator 2.4.1, 2013-03-18T20:24:20. -->
 <qtcreator>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -122,10 +122,18 @@
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Deploy Debian package via SFTP upload</value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
       <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">MaemoUploadAndInstallDpkgPackageStep</value>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles"/>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts"/>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths"/>
-      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes"/>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedFiles">
+       <value type="QString">/home/jdewit/Projects/sciencelab-qt_builddir/cordovaqt_0.1.0_armel.deb</value>
+      </valuelist>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedHosts">
+       <value type="QString">192.168.2.15</value>
+      </valuelist>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedRemotePaths">
+       <value type="QString"></value>
+      </valuelist>
+      <valuelist type="QVariantList" key="Qt4ProjectManager.MaemoRunConfiguration.LastDeployedTimes">
+       <value type="QDateTime">2013-03-16T21:49:33</value>
+      </valuelist>
      </valuemap>
      <value type="int" key="ProjectExplorer.BuildStepList.StepsCount">3</value>
      <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Deploy</value>
@@ -136,7 +144,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Build Debian Package and Install to Harmattan Device</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">DeployToHarmattan</value>
-    <value type="qulonglong" key="Qt4ProjectManager.MaemoRunConfiguration.DeviceId">1</value>
+    <value type="qulonglong" key="Qt4ProjectManager.MaemoRunConfiguration.DeviceId">5</value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.DeployConfigurationCount">1</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.0">
