@@ -1,4 +1,4 @@
-var serviceURL = "http://10.10.0.16:8080/sciencelab/@@phonebook";
+var serviceURL = "http://intranettest.virtualsciences.nl/@@phonebook";
 var employees;
 
 

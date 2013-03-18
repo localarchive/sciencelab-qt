@@ -1,5 +1,10 @@
-cordovaqt (0.2.0) unstable; urgency=low
+cordovaqt (0.3.0) unstable; urgency=low
 
+  * Add icon
+  * Rename app
+  * Set REST-api url to non-public datasource
+
+## 0.2.0
   * Single page and single js version
   * Includes swipe left and right
   * ! Missing footer navigation to visualize swipe left and right
@@ -18,4 +23,4 @@ cordovaqt (0.2.0) unstable; urgency=low
 ## 0.0.1
   * Initial Release.
 
- -- Jarno <jarno@callmelocalhost.com>  Mon, 15 Mar 2013 22:24:00 +0100
+ -- Jarno <jarno@callmelocalhost.com>  18 Mar 2013 23:07:00 +0100
